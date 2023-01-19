@@ -13,7 +13,7 @@
   <nav>
 
   </nav>
-  <section class="bg-main bg-cover pb-8">
+  <section class="bg-main bg-cover pb-8 xl:px-28">
     <div class="px-[22px]">
       <div class="px-7 pt-40 mb-[350px]">
         <p class="text-white text-center text-2xl">It's time for new</p>
@@ -115,16 +115,18 @@
     </div>
   </section>
 
-  <section class="pt-9 px-[22px]">
-    <div class="flex justify-center">
-      <div class="w-56">
-        <p class="font-medium text-3xl text-center">Find The Perfect Escape</p>
+  <section class="pt-9 px-[22px] xl:px-28 lg:flex lg:items-center lg:gap-10 xl:gap-32">
+    <div>
+      <div class="flex justify-center">
+        <div class="w-56">
+          <p class="font-medium text-3xl text-center lg:text-left">Find The Perfect Escape</p>
+        </div>
       </div>
+      <div class="flex justify-center lg:justify-start mt-5 mb-3">
+        <div class="border-b-4 border-orange-500 w-20"></div>
+      </div>
+      <p class="text-center text-sm text-black/50 mb-6 lg:text-left">Discover your ideal Experiences </p>
     </div>
-    <div class="flex justify-center mt-5 mb-3">
-      <div class="border-b-4 border-orange-500 w-20"></div>
-    </div>
-    <p class="text-center text-sm text-black/50 mb-6">Discover your ideal Experiences </p>
 
     <div class="flex overflow-x-auto gap-6">
       <img class="w-56 rounded-lg" src="./assets/escapes/img1.png" alt="">
@@ -133,57 +135,88 @@
     </div>
   </section>
 
-  <section class="px-[22px]">
-    <a class="relative " href="/">
-      <img class="brightness-75 w-fit" src="./assets/luxury/main.jpg" alt="">
-      <div class="absolute top-28 w-full px-4">
-        <div>
-          <p class="font-bold text-xl text-white">Find Best Things to Do</p>
-          <p class="font-medium tracking-wider text-sm text-white">Across Globe</p>
-        </div>
-        <div class="flex justify-end">
-          <button class="bg-blue-500 px-3 py-1.5 rounded-md font-medium text-sm">Book Now</button>
+  <section class="px-[22px] mt-20 lg:inline-grid lg:grid-cols-2 xl:px-28">
+    <a class="relative w-fit" href="#">
+      <div class="flex items-center lg:h-[30rem]">
+        <img class="brightness-75 w-full rounded-2xl lg:w-[34rem] lg:h-[30rem]" src="./assets/luxury/main.jpg" alt="">
+        <div class="absolute px-4 w-full">
+          <div>
+            <p class="font-bold text-xl text-white">Find Best Things to Do</p>
+            <p class="font-medium tracking-wider text-sm text-white">Across Globe</p>
+          </div>
+          <div class="flex justify-end">
+            <button class="bg-orange-500 text-white px-3 py-1.5 rounded-md font-medium text-sm">Book Now</button>
+          </div>
         </div>
       </div>
     </a>
 
-    <div class="grid grid-cols-3">
-      <a class="flex justify-center items-center" href="/">
-        <img class="brightness-90 rounded-2xl h-48" src="./assets/luxury/dubai.jpg" alt="">
-        <p class="absolute text-white">Dubai</p>
-      </a>
-      <a class="flex justify-center items-center" href="/">
-        <img class="brightness-90 rounded-2xl" src="./assets/luxury/london.jpg" alt="">
-        <p class="absolute text-white">London</p>
-      </a>
-      <a class="flex justify-center items-center" href="/">
-        <img class="brightness-90 rounded-2xl" src="./assets/luxury/paris.jpg" alt="">
-        <p class="absolute text-white">Paris</p>
-      </a>
-      <a class="flex justify-center items-center" href="/">
-        <img class="brightness-90 rounded-2xl" src="./assets/luxury/bali.jpg" alt="">
-        <p class="absolute text-white">Bali</p>
-      </a>
-      <a class="flex justify-center items-center" href="/">
-        <img class="brightness-90 rounded-2xl" src="./assets/luxury/singapore.jpg" alt="">
-        <p class="absolute text-white">Singapore</p>
-      </a>
-      <a class="flex justify-center items-center" href="/">
-        <img class="brightness-90 rounded-2xl" src="./assets/luxury/malaysia.jpg" alt="">
-        <p class="absolute text-white">Malaysia</p>
-      </a>
-      <a class="flex justify-center items-center" href="/">
-        <img class="brightness-90 rounded-2xl" src="./assets/luxury/thailand.jpg" alt="">
-        <p class="absolute text-white">Thailand</p>
-      </a>
-      <a class="flex justify-center items-center" href="/">
-        <img class="brightness-90 rounded-2xl" src="./assets/luxury/abuDhabi.jpg" alt="">
-        <p class="absolute text-white">Abu Dhabi</p>
-      </a>
+    <div class="grid grid-cols-3 gap-3 mt-5 lg:mt-0">
+      <div class="flex flex-col gap-3">
+        <div class="flex w-fit h-fit">
+          <a class="flex justify-center items-center" href="/">
+            <img class="brightness-90 rounded-2xl w-screen h-48 object-cover" src="./assets/luxury/dubai.jpg" alt="">
+            <p class="absolute text-white">Dubai</p>
+          </a>
+        </div>
+        <div class="flex w-fit h-fit">
+          <a class="flex justify-center items-center" href="/">
+            <img class="brightness-90 rounded-2xl w-screen h-32 object-cover" src="./assets/luxury/london.jpg" alt="">
+            <p class="absolute text-white">London</p>
+          </a>
+        </div>
+        <div class="flex w-fit h-fit">
+          <a class="flex justify-center items-center" href="/">
+            <img class="brightness-90 rounded-2xl w-screen h-32 object-cover" src="./assets/luxury/paris.jpg" alt="">
+            <p class="absolute text-white">Paris</p>
+          </a>
+        </div>
+      </div>
+
+      <div class="flex flex-col gap-3">
+        <div class="flex w-fit h-fit">
+          <a class="flex justify-center items-center" href="/">
+            <img class="brightness-90 rounded-2xl w-screen h-36 object-cover" src="./assets/luxury/bali.jpg" alt="">
+            <p class="absolute text-white">Bali</p>
+          </a>
+        </div>
+        <div class="flex w-fit h-fit">
+          <a class="flex justify-center items-center" href="/">
+            <img class="brightness-90 rounded-2xl w-screen h-44 object-cover" src="./assets/luxury/singapore.jpg" alt="">
+            <p class="absolute text-white">Singapore</p>
+          </a>
+        </div>
+        <div class="flex w-fit h-fit">
+          <a class="flex justify-center items-center" href="/">
+            <img class="brightness-90 rounded-2xl w-screen h-32 object-cover" src="./assets/luxury/malaysia.jpg" alt="">
+            <p class="absolute text-white">Malaysia</p>
+          </a>
+        </div>
+      </div>
+
+      <div class="flex flex-col gap-3">
+        <div class="flex w-fit h-fit">
+          <a class="flex justify-center items-center" href="/">
+            <img class="brightness-90 rounded-2xl w-screen h-52 object-cover" src="./assets/luxury/thailand.jpg" alt="">
+            <p class="absolute text-white">Thailand</p>
+          </a>
+        </div>
+        <div class="flex w-fit h-fit">
+          <a class="flex justify-center items-center" href="/">
+            <img class="brightness-90 rounded-2xl w-screen h-52 object-cover" src="./assets/luxury/abuDhabi.jpg" alt="">
+            <p class="absolute text-white">Abu Dhabi</p>
+          </a>
+        </div>
+        <div class="flex">
+          <a href="#" class="transition border rounded-md px-8 py-1 bg-orange-500 h-fit font-medium text-white text-sm hover:bg-white hover:border-orange-500 hover:text-orange-500">
+            View All
+          </a>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section class="px-[22px] mt-8">
+  <section class="px-[22px] xl:px-28 mt-8">
     <div class="flex justify-center">
       <div class="w-56">
         <p class="font-semibold text-2xl text-center">Best Of India</p>
@@ -232,7 +265,7 @@
     </div> -->
   </section>
 
-  <section class="px-[22px] mt-8">
+  <section class="px-[22px] xl:px-28 mt-8">
     <div class="flex justify-center">
       <div class="w-56">
         <p class="font-semibold text-2xl text-center">Best Of South East Asia</p>
@@ -252,7 +285,7 @@
     </div>
   </section>
 
-  <section class="px-[22px] mt-14">
+  <section class="px-[22px] xl:px-28 mt-14">
     <div id="indicators-carousel" class="relative" data-carousel="static">
       <!-- Carousel wrapper -->
       <div class="relative h-56 sm:h-72 overflow-hidden rounded-lg md:h-96">
@@ -298,7 +331,7 @@
     </div>
   </section>
 
-  <section class="px-[22px] mt-10">
+  <section class="px-[22px] xl:px-28 mt-10">
     <div class="flex justify-center">
       <div class="w-80">
         <p class="font-semibold text-2xl text-center">Top Rated Experiences On Thrillophilia</p>
@@ -476,7 +509,7 @@
     </div>
   </section>
 
-  <section class="px-[22px] mt-10">
+  <section class="px-[22px] xl:px-28 mt-10">
     <div class="flex justify-center">
       <div class="w-80">
         <p class="font-semibold text-2xl text-center">Destinations near you</p>
@@ -486,7 +519,7 @@
       <div class="border-b-4 border-orange-500 w-20"></div>
     </div>
 
-    <div class="flex gap-3 overflow-auto justify-center">
+    <div class="flex gap-3 overflow-auto justify-center mb-5">
       <button class="border border-orange-700 px-4 py-2 text-xs rounded-full text-orange-700">Banglore</button>
       <button
         class="border border-gray-500 px-4 py-2 text-xs rounded-full text-gray-500 hover:border-orange-700 hover:text-orange-700">Mumbai</button>
@@ -571,7 +604,7 @@
     </div>
   </section>
 
-  <footer class="bg-soft-black px-[22px] mt-24 pb-24">
+  <footer class="bg-soft-black px-[22px] xl:px-28 mt-24 pb-24">
     <div class="bg-white rounded-xl px-6 py-9 drop-shadow-2xl relative bottom-16 sm:inline-grid sm:grid-cols-2  lg:grid-cols-4">
       <div class="mb-7">
         <h2 class="text-soft-black text-xs uppercase tracking-widest font-bold">About Thrillophilia</h2>
