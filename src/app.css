@@ -1442,6 +1442,10 @@ html {
   flex-direction: row;
 }
 
+.flex-row-reverse{
+  flex-direction: row-reverse;
+}
+
 .flex-col{
   flex-direction: column;
 }
@@ -1492,6 +1496,10 @@ html {
 
 .gap-1{
   gap: 0.25rem;
+}
+
+.gap-2{
+  gap: 0.5rem;
 }
 
 .space-x-3 > :not([hidden]) ~ :not([hidden]){
@@ -1755,6 +1763,16 @@ html {
   padding-right: 1.25rem;
 }
 
+.py-4{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.px-9{
+  padding-left: 2.25rem;
+  padding-right: 2.25rem;
+}
+
 .pb-8{
   padding-bottom: 2rem;
 }
@@ -1845,6 +1863,10 @@ html {
 
 .font-light{
   font-weight: 300;
+}
+
+.font-thin{
+  font-weight: 100;
 }
 
 .uppercase{
@@ -2278,12 +2300,20 @@ html {
     margin-top: 0px;
   }
 
+  .lg\:block{
+    display: block;
+  }
+
   .lg\:flex{
     display: flex;
   }
 
   .lg\:inline-grid{
     display: inline-grid;
+  }
+
+  .lg\:hidden{
+    display: none;
   }
 
   .lg\:h-\[30rem\]{
@@ -2294,6 +2324,10 @@ html {
     height: 5rem;
   }
 
+  .lg\:h-4\/5{
+    height: 80%;
+  }
+
   .lg\:w-\[34rem\]{
     width: 34rem;
   }
@@ -2302,12 +2336,28 @@ html {
     width: 5rem;
   }
 
+  .lg\:w-4\/5{
+    width: 80%;
+  }
+
+  .lg\:w-1\/2{
+    width: 50%;
+  }
+
+  .lg\:w-full{
+    width: 100%;
+  }
+
   .lg\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .lg\:grid-cols-4{
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .lg\:flex-row-reverse{
+    flex-direction: row-reverse;
   }
 
   .lg\:items-center{
@@ -2320,6 +2370,10 @@ html {
 
   .lg\:justify-center{
     justify-content: center;
+  }
+
+  .lg\:justify-between{
+    justify-content: space-between;
   }
 
   .lg\:justify-evenly{
