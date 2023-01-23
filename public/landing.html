@@ -16,12 +16,92 @@
   <section class="bg-main bg-cover pb-8 xl:px-28">
     <div class="px-[22px]">
       <div class="px-7 pt-40 mb-[350px]">
-        <p class="text-white text-center text-2xl">It's time for new</p>
-        <h3 class="text-white font-medium text-center text-5xl">Adventures</h3>
-        <form class="flex items-center mt-11">
-          <!-- <label for="simple-search" class="sr-only">Search Destination, Tour, Activities</label> -->
+        <div class="mb-11">
+          <p class="text-white text-center text-2xl">It's time for new</p>
+          <h3 class="text-white font-medium text-center text-5xl">Adventures</h3>
+        </div>
+        <div class="lg:flex justify-center hidden">
+          <ul class="flex">
+            <li>
+              <input type="radio" id="all" name="hosting" value="all" class="hidden peer" checked>
+              <label for="all"
+                class="inline-flex items-center justify-between w-fit py-2.5 px-6 text-gray-500 bg-[#424544] rounded-l-lg border-r border-white/60 cursor-pointer peer-checked:border-orange-500 peer-checked:bg-orange-500 hover:bg-orange-500">
+                <div class="block">
+                  <div class="w-11 flex items-center gap-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                      <path fill="white"
+                        d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10s10-4.486 10-10S17.514 2 12 2zM4 12c0-.899.156-1.762.431-2.569L6 11l2 2v2l2 2l1 1v1.931C7.061 19.436 4 16.072 4 12zm14.33 4.873C17.677 16.347 16.687 16 16 16v-1a2 2 0 0 0-2-2h-4v-3a2 2 0 0 0 2-2V7h1a2 2 0 0 0 2-2v-.411C17.928 5.778 20 8.65 20 12a7.947 7.947 0 0 1-1.67 4.873z" />
+                    </svg>
+                    <span class="text-white text-xs">All</span>
+                  </div>
+                </div>
+              </label>
+            </li>
+            <li>
+              <input type="radio" id="activities" name="hosting" value="activities" class="hidden peer">
+              <label for="activities"
+                class="inline-flex items-center justify-between w-fit py-2.5 px-6 text-gray-500 bg-[#424544] border-l border-r border-white/60 cursor-pointer peer-checked:border-orange-500 peer-checked:bg-orange-500 hover:bg-orange-500">
+                <div class="block">
+                  <div class="w-20 flex items-center gap-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                      <path fill="white"
+                        d="M2.88 18.054a35.897 35.897 0 0 1 8.531-16.32a.8.8 0 0 1 1.178 0c.166.18.304.332.413.455a35.897 35.897 0 0 1 8.118 15.865c-2.141.451-4.34.747-6.584.874l-2.089 4.178a.5.5 0 0 1-.894 0l-2.089-4.178a44.019 44.019 0 0 1-6.584-.874zM12 15a3 3 0 1 0 0-6a3 3 0 0 0 0 6z" />
+                    </svg>
+                    <span class="text-white text-xs">Activities</span>
+                  </div>
+                </div>
+              </label>
+            </li>
+            <li>
+              <input type="radio" id="tours" name="hosting" value="tours" class="hidden peer">
+              <label for="tours"
+                class="inline-flex items-center justify-between w-fit py-2.5 px-6 text-gray-500 bg-[#424544] border-l border-r border-white/60 cursor-pointer peer-checked:border-orange-500 peer-checked:bg-orange-500 hover:bg-orange-500">
+                <div class="block">
+                  <div class="w-16 flex items-center gap-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1.13em" height="1em" viewBox="0 0 576 512">
+                      <path fill="white"
+                        d="M432 96c26.5 0 48-21.5 48-48S458.5 0 432 0s-48 21.5-48 48s21.5 48 48 48zm-84.3 104.5c1-.4 1.9-.8 2.9-1.2l-16.9 63.5c-5.6 21.1-.1 43.6 14.7 59.7l70.7 77.1l22 88.1c4.3 17.1 21.7 27.6 38.8 23.3s27.6-21.7 23.3-38.8l-23-92.1c-1.9-7.8-5.8-14.9-11.2-20.8l-49.5-54l19.3-65.5l9.6 23c4.4 10.6 12.5 19.3 22.8 24.5l26.7 13.3c15.8 7.9 35 1.5 42.9-14.3s1.5-35-14.3-42.9L505 232.7l-15.3-36.8c-17.2-41.1-57.4-67.9-102-67.9c-22.8 0-45.3 4.8-66.1 14l-8 3.5c-32.9 14.6-58.1 42.4-69.4 76.5l-2.6 7.8c-5.6 16.8 3.5 34.9 20.2 40.5s34.9-3.5 40.5-20.2l2.6-7.8c5.7-17.1 18.3-30.9 34.7-38.2l8-3.5zm-30 135.1l-25 62.4l-59.4 59.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l61.7-61.7c4.6-4.6 8.2-10.1 10.6-16.1l14.5-36.2l-40.7-44.4c-2.5-2.7-4.8-5.6-7-8.6zM256 274.1c-7.7-4.4-17.4-1.8-21.9 5.9l-32 55.4l-54.4-31.4c-15.3-8.8-34.9-3.6-43.7 11.7L40 426.6c-8.8 15.3-3.6 34.9 11.7 43.7l55.4 32c15.3 8.8 34.9 3.6 43.7-11.7l64-110.9c1.5-2.6 2.6-5.2 3.3-8l43.8-75.7c4.4-7.7 1.8-17.4-5.9-21.9z" />
+                    </svg>
+                    <span class="text-white text-xs">Tours</span>
+                  </div>
+                </div>
+              </label>
+            </li>
+            <li>
+              <input type="radio" id="rentals" name="hosting" value="rentals" class="hidden peer">
+              <label for="rentals"
+                class="inline-flex items-center justify-center w-fit py-2.5 px-6 text-gray-500 bg-[#424544] border-l border-r border-white/60 cursor-pointer peer-checked:border-orange-500 peer-checked:bg-orange-500 hover:bg-orange-500">
+                <div class="block">
+                  <div class="w-16 flex items-center gap-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                      <path fill="white"
+                        d="M6 19v1q0 .425-.287.712Q5.425 21 5 21H4q-.425 0-.712-.288Q3 20.425 3 20v-8l2.1-6q.15-.45.538-.725Q6.025 5 6.5 5h11q.475 0 .863.275q.387.275.537.725l2.1 6v8q0 .425-.288.712Q20.425 21 20 21h-1q-.425 0-.712-.288Q18 20.425 18 20v-1Zm-.2-9h12.4l-1.05-3H6.85Zm1.7 6q.625 0 1.062-.438Q9 15.125 9 14.5t-.438-1.062Q8.125 13 7.5 13t-1.062.438Q6 13.875 6 14.5t.438 1.062Q6.875 16 7.5 16Zm9 0q.625 0 1.062-.438Q18 15.125 18 14.5t-.438-1.062Q17.125 13 16.5 13t-1.062.438Q15 13.875 15 14.5t.438 1.062Q15.875 16 16.5 16Z" />
+                    </svg>
+                    <span class="text-white text-xs">Rentals</span>
+                  </div>
+                </div>
+              </label>
+            </li>
+            <li>
+              <input type="radio" id="staycations" name="hosting" value="staycations" class="hidden peer">
+              <label for="staycations"
+                class="inline-flex items-center justify-center w-fit py-2.5 px-6 text-gray-500 bg-[#424544] rounded-r-lg border-l border-white/60 cursor-pointer peer-checked:border-orange-500 peer-checked:bg-orange-500 hover:bg-orange-500">
+                <div class="block">
+                  <div class="w-24 flex items-center gap-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 256 256">
+                      <path fill="white"
+                        d="M240 208h-16v-92.5a16 16 0 0 0-5.2-11.8l-80-72.7a16 16 0 0 0-21.6 0l-80 72.7a16 16 0 0 0-5.2 11.8V208H16a8 8 0 0 0 0 16h224a8 8 0 0 0 0-16ZM48 115.5l80-72.7l80 72.7V208h-48v-48a16 16 0 0 0-16-16h-32a16 16 0 0 0-16 16v48H48Zm96 92.5h-32v-48h32Z" />
+                    </svg>
+                    <span class="text-white text-xs">Staycations</span>
+                  </div>
+                </div>
+              </label>
+            </li>
+          </ul>
+        </div>
+        <form class="flex items-center">
           <div class="relative w-full">
-            <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+            <div class="absolute inset-y-0 right-0 mr-8 flex items-center pl-3 pointer-events-none">
               <svg aria-hidden="true" class="w-5 h-5 text-gray-500" fill="currentColor" viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd"
@@ -30,11 +110,10 @@
               </svg>
             </div>
             <input type="text" id="simple-search"
-              class="bg-gray-50 border border-gray-300 text-gray-900 text-xs rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5"
+              class="bg-gray-50 border border-gray-300 text-gray-900 text-xs rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-5 p-2.5"
               placeholder="Search Destination, Tour, Activities" required>
           </div>
         </form>
-
       </div>
 
       <div class="grid grid-cols-2 gap-4 lg:flex lg:justify-evenly">
@@ -240,10 +319,13 @@
       <figure
         class="relative min-w-max max-w-min transition-all duration-300 cursor-pointer brightness-90 hover:brightness-75">
         <a href="#">
-          <img class="rounded-xl w-56"
+          <img class="rounded-xl w-56 "
             src="https://ui-assets-gc.thrillophilia.com/assets/homepage/collections/best-of-india/Ladakh-becb0cc971e6deb15208c9a7ea834975157ae8b76bf4cbd0cea5607b42475777.jpg"
             alt="image description">
         </a>
+        <div
+          class="rounded-xl absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-gradient-to-b from-transparent via-transparent to-black opacity-70">
+        </div>
         <figcaption class="absolute px-4 text-lg text-white bottom-6 w-full">
           <p class="text-center">LADAKH</p>
         </figcaption>
@@ -255,6 +337,9 @@
             src="https://ui-assets-gc.thrillophilia.com/assets/homepage/collections/best-of-india/Himachal-0405933ddd98696eb51761ff0d03748dbb324d76e7737f4b16ce2042ecebdc4a.jpg"
             alt="image description">
         </a>
+        <div
+          class="rounded-xl absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-gradient-to-b from-transparent via-transparent to-black opacity-70">
+        </div>
         <figcaption class="absolute px-4 text-lg text-white bottom-6 w-full">
           <p class="text-center">HIMACHAL PRADESH</p>
         </figcaption>
@@ -266,6 +351,9 @@
             src="https://ui-assets-gc.thrillophilia.com/assets/homepage/collections/best-of-india/Kerela-1fb12fb4e5a9a352d688e6c8165503b98b869db90bd1fba0cc81c4d557c112d4.jpg"
             alt="image description">
         </a>
+        <div
+          class="rounded-xl absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-gradient-to-b from-transparent via-transparent to-black opacity-70">
+        </div>
         <figcaption class="absolute px-4 text-lg text-white bottom-6 w-full">
           <p class="text-center">KERALA</p>
         </figcaption>
@@ -277,6 +365,9 @@
             src="https://ui-assets-gc.thrillophilia.com/assets/homepage/collections/best-of-india/NorthEast-aef0067fc06d446939ca302c20de0bcc969a29929db335f3d99ca2038465b146.jpg"
             alt="image description">
         </a>
+        <div
+          class="rounded-xl absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-gradient-to-b from-transparent via-transparent to-black opacity-70">
+        </div>
         <figcaption class="absolute px-4 text-lg text-white bottom-6 w-full">
           <p class="text-center">NORTH EAST</p>
         </figcaption>
@@ -288,6 +379,9 @@
             src="https://ui-assets-gc.thrillophilia.com/assets/homepage/collections/best-of-india/Uttarakhand-5a2fffd5b728724aa0fe4f50d5e8f2012ac1612d8a36c72ea96b6e37d57c8858.jpg"
             alt="image description">
         </a>
+        <div
+          class="rounded-xl absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-gradient-to-b from-transparent via-transparent to-black opacity-70">
+        </div>
         <figcaption class="absolute px-4 text-lg text-white bottom-6 w-full">
           <p class="text-center">UTTARAKHAND</p>
         </figcaption>
@@ -299,6 +393,9 @@
             src="https://ui-assets-gc.thrillophilia.com/assets/homepage/collections/best-of-india/Spiti-688b55ab68d1577b9e363e5fa5764a996bb6e111cb9a96e2a548d72f7a442509.jpg"
             alt="image description">
         </a>
+        <div
+          class="rounded-xl absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-gradient-to-b from-transparent via-transparent to-black opacity-70">
+        </div>
         <figcaption class="absolute px-4 text-lg text-white bottom-6 w-full">
           <p class="text-center">SPITI</p>
         </figcaption>
@@ -310,6 +407,9 @@
             src="https://ui-assets-gc.thrillophilia.com/assets/homepage/collections/best-of-india/Rajasthan-ddc9d190b6a6ecccfa7acc66331ef9dd34bf7a8f76657a824ea13589fca7110d.jpg"
             alt="image description">
         </a>
+        <div
+          class="rounded-xl absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-gradient-to-b from-transparent via-transparent to-black opacity-70">
+        </div>
         <figcaption class="absolute px-4 text-lg text-white bottom-6 w-full">
           <p class="text-center">RAJASTHAN</p>
         </figcaption>
@@ -321,6 +421,9 @@
             src="https://ui-assets-gc.thrillophilia.com/assets/homepage/collections/best-of-india/Kashmir-c70c0b9ed21f5c1c044cc53b1118217e24688b5b1327ab8ad499b3de1036eb07.jpg"
             alt="image description">
         </a>
+        <div
+          class="rounded-xl absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-gradient-to-b from-transparent via-transparent to-black opacity-70">
+        </div>
         <figcaption class="absolute px-4 text-lg text-white bottom-6 w-full">
           <p class="text-center">KASHMIR</p>
         </figcaption>
@@ -332,6 +435,9 @@
             src="https://ui-assets-gc.thrillophilia.com/assets/homepage/collections/best-of-india/Sikkim-c42e8db9d016b06186f10abc7b5e1be606b9a831c8e7c8f2353427d99f983c3f.jpg"
             alt="image description">
         </a>
+        <div
+          class="rounded-xl absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-gradient-to-b from-transparent via-transparent to-black opacity-70">
+        </div>
         <figcaption class="absolute px-4 text-lg text-white bottom-6 w-full">
           <p class="text-center">SIKKIM</p>
         </figcaption>
@@ -1268,29 +1374,39 @@
     </div>
 
     <div class="flex justify-center mt-5 gap-8">
-      <button type="button" data-mdb-ripple="true" data-mdb-ripple-color="light" class="inline-block px-2.5 py-2.5 mb-2 text-soft-black font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out bg-[#B7B7B7]">
+      <button type="button" data-mdb-ripple="true" data-mdb-ripple-color="light"
+        class="inline-block px-2.5 py-2.5 mb-2 text-soft-black font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out bg-[#B7B7B7]">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="w-4 h-4">
-          <path fill="currentColor" d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/>
+          <path fill="currentColor"
+            d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z" />
         </svg>
       </button>
-      <button type="button" data-mdb-ripple="true" data-mdb-ripple-color="light" class="inline-block px-2.5 py-2.5 mb-2 text-soft-black font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out bg-[#B7B7B7]">
+      <button type="button" data-mdb-ripple="true" data-mdb-ripple-color="light"
+        class="inline-block px-2.5 py-2.5 mb-2 text-soft-black font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out bg-[#B7B7B7]">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="w-4 h-4">
-          <path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/>
+          <path fill="currentColor"
+            d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
         </svg>
       </button>
-      <button type="button" data-mdb-ripple="true" data-mdb-ripple-color="light" class="inline-block px-2.5 py-2.5 mb-2 text-soft-black font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out bg-[#B7B7B7]">
+      <button type="button" data-mdb-ripple="true" data-mdb-ripple-color="light"
+        class="inline-block px-2.5 py-2.5 mb-2 text-soft-black font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out bg-[#B7B7B7]">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-4 h-4">
-          <path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/>
+          <path fill="currentColor"
+            d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" />
         </svg>
       </button>
-      <button type="button" data-mdb-ripple="true" data-mdb-ripple-color="light" class="inline-block px-2.5 py-2.5 mb-2 text-soft-black font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out bg-[#B7B7B7]">
+      <button type="button" data-mdb-ripple="true" data-mdb-ripple-color="light"
+        class="inline-block px-2.5 py-2.5 mb-2 text-soft-black font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out bg-[#B7B7B7]">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="w-4 h-4">
-          <path fill="currentColor" d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/>
+          <path fill="currentColor"
+            d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z" />
         </svg>
       </button>
-      <button type="button" data-mdb-ripple="true" data-mdb-ripple-color="light" class="inline-block px-2.5 py-2.5 mb-2 text-soft-black font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out bg-[#B7B7B7]">
+      <button type="button" data-mdb-ripple="true" data-mdb-ripple-color="light"
+        class="inline-block px-2.5 py-2.5 mb-2 text-soft-black font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out bg-[#B7B7B7]">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="w-4 h-4">
-          <path fill="currentColor" d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/>
+          <path fill="currentColor"
+            d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z" />
         </svg>
       </button>
     </div>
