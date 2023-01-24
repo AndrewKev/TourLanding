@@ -10,9 +10,114 @@
 </head>
 
 <body>
-  <nav>
+  <nav id="navbar" class="transition ease-out  px-[22px] xl:px-28 pt-3 rounded fixed w-full z-50 nav-container">
+    <div
+      class="container flex flex-row-reverse md:flex-row flex-wrap items-center justify-between mx-auto md:border-b pb-2 border-white">
 
+      <div class="md:hidden pl-3 pointer-events-none">
+        <svg id="lup2" aria-hidden="true" class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd"
+            d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+            clip-rule="evenodd"></path>
+        </svg>
+      </div>
+
+      <div class="flex gap-5">
+        <a href="/" class="flex items-center">
+          <span id="title" class="self-center text-xl font-semibold whitespace-nowrap text-white">thrillophilia</span>
+        </a>
+  
+        <form class="hidden md:flex items-center">
+          <label for="simple-search" class="sr-only">Search</label>
+          <div class="relative w-full">
+            <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+              <svg id="lup" aria-hidden="true" class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                  clip-rule="evenodd"></path>
+              </svg>
+            </div>
+            <input id="inpnav" type="text" id="simple-search"
+              class="appearance-none bg-transparent block border-0 text-white text-sm  w-full pl-10 p-2.5 placeholder-white"
+              placeholder="Search" required>
+          </div>
+        </form>
+      </div>
+
+      <div class="hidden md:flex md:gap-4">
+        <div class="hidden md:block hover:border-b-2 hover:border-orange-500 relative pb-5 top-[11px]">
+          <a href="#" class="flex gap-1 items-end">
+            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 512 512">
+              <path class="gift stroke-white" fill="none" stroke="white" stroke-linecap="round" stroke-miterlimit="10"
+                stroke-width="32" d="M256 104v56h56a56 56 0 1 0-56-56Zm0 0v56h-56a56 56 0 1 1 56-56Z" />
+              <rect class="gift stroke-white" width="384" height="112" x="64" y="160" fill="none" stroke="white"
+                stroke-linecap="round" stroke-linejoin="round" stroke-width="32" rx="32" ry="32" />
+              <path class="gift stroke-white" fill="none" stroke="white" stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="32" d="M416 272v144a48 48 0 0 1-48 48H144a48 48 0 0 1-48-48V272m160-112v304" />
+            </svg>
+            <span id="gift" class="text-white text-xs">Gift an Experience</span>
+          </a>
+        </div>
+  
+        <div class="hidden md:block hover:border-b-2 hover:border-orange-500 relative pb-5 top-[11px]">
+          <button class="flex gap-1 items-end">
+            <span id="lang" class="text-white text-xs">IDR</span>
+            <svg id="langDrop" class="w-4 h-4 stroke-white" aria-hidden="true" fill="none" stroke="currentColor"
+              viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </button>
+        </div>
+  
+        <div class="hidden md:block hover:border-b-2 hover:border-orange-500 relative pb-5 top-[11px]">
+          <a href="#" class="flex gap-1 items-end">
+            <span id="login" class="text-white text-xs">Log in</span>
+          </a>
+        </div>
+      </div>
+
+      <button data-collapse-toggle="navbar-default" type="button"
+        class="inline-flex items-center p-2 ml-3 text-sm text-white rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+        aria-controls="navbar-default" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg id="hamburger" class="w-6 h-6 fill-white" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd"
+            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+            clip-rule="evenodd"></path>
+        </svg>
+      </button>
+      <!-- <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+        <ul
+          class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+          <li>
+            <a href="#"
+              class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white"
+              aria-current="page">Home</a>
+          </li>
+          <li>
+            <a href="#"
+              class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a>
+          </li>
+          <li>
+            <a href="#"
+              class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Services</a>
+          </li>
+          <li>
+            <a href="#"
+              class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Pricing</a>
+          </li>
+          <li>
+            <a href="#"
+              class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
+          </li>
+        </ul>
+      </div> -->
+    </div>
   </nav>
+
   <section class="bg-main bg-cover pb-8 xl:px-28">
     <div class="px-[22px]">
       <div class="px-7 pt-40 mb-[350px]">
@@ -110,7 +215,7 @@
               </svg>
             </div>
             <input type="text" id="simple-search"
-              class="bg-gray-50 border border-gray-300 text-gray-900 text-xs rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-5 p-2.5"
+              class="bg-gray-50 border border-gray-300 text-gray-900 text-xs rounded-md focus:ring-blue-500 focus:border-blue-500 block w-full pl-5 p-2.5"
               placeholder="Search Destination, Tour, Activities" required>
           </div>
         </form>
@@ -294,9 +399,9 @@
             <p class="absolute text-white">Abu Dhabi</p>
           </a>
         </div>
-        <div class="flex">
+        <div class="flex w-fit">
           <a href="#"
-            class="transition border rounded-md px-8 py-1 bg-orange-500 h-fit font-medium text-white text-sm hover:bg-white hover:border-orange-500 hover:text-orange-500">
+            class="transition border rounded-md px-6 md:px-8 py-1 bg-orange-500 h-fit font-medium text-white text-sm hover:bg-white hover:border-orange-500 hover:text-orange-500">
             View All
           </a>
         </div>
@@ -448,20 +553,140 @@
   <section class="px-[22px] xl:px-28 mt-8">
     <div class="flex justify-center">
       <div class="w-56">
-        <p class="font-semibold text-2xl text-center">Best Of South East Asia</p>
+        <p class="font-semibold text-2xl text-center">Best of South East Asia</p>
       </div>
     </div>
     <div class="flex justify-center mt-3 mb-3">
       <div class="border-b-4 border-orange-500 w-20"></div>
     </div>
 
-    <div class="flex overflow-auto gap-4">
-      <img class="h-64 brightness-90 rounded-xl" src="./assets/sea/Thailand.jpg" alt="">
-      <img class="h-64 brightness-90 rounded-xl" src="./assets/sea/Singapore.jpg" alt="">
-      <img class="h-64 brightness-90 rounded-xl" src="./assets/sea/Bali.jpg" alt="">
-      <img class="h-64 brightness-90 rounded-xl" src="./assets/sea/Malaysia.jpg" alt="">
-      <img class="h-64 brightness-90 rounded-xl" src="./assets/sea/Vietnam.jpg" alt="">
-      <img class="h-64 brightness-90 rounded-xl" src="./assets/sea/Cambodia.jpg" alt="">
+    <div class="flex overflow-x-auto gap-4">
+      <figure
+        class="relative min-w-max max-w-min transition-all duration-300 cursor-pointer brightness-90 hover:brightness-75">
+        <a href="#">
+          <img class="rounded-xl w-56 "
+            src="https://ui-assets-gc.thrillophilia.com/assets/homepage/collections/best-of-south-east-asia/Thailand-c233d380c78411959ef6992e4ecc205705128339a0c7946af053559de75447f7.jpg"
+            alt="image description">
+        </a>
+        <div
+          class="rounded-xl absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-gradient-to-b from-transparent via-transparent to-black opacity-70">
+        </div>
+        <figcaption class="absolute px-4 text-lg text-white bottom-6 w-full">
+          <p class="text-center">THAILAND</p>
+        </figcaption>
+      </figure>
+      <figure
+        class="relative min-w-max max-w-min transition-all duration-300 cursor-pointer brightness-90 hover:brightness-75">
+        <a href="#">
+          <img class="rounded-xl w-56"
+            src="https://ui-assets-gc.thrillophilia.com/assets/homepage/collections/best-of-south-east-asia/Singapore-31c6e6f733ae0b41778758679f73e145aef982a3e8b8b968886e1abe804b0735.jpg"
+            alt="image description">
+        </a>
+        <div
+          class="rounded-xl absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-gradient-to-b from-transparent via-transparent to-black opacity-70">
+        </div>
+        <figcaption class="absolute px-4 text-lg text-white bottom-6 w-full">
+          <p class="text-center">SINGAPORE</p>
+        </figcaption>
+      </figure>
+      <figure
+        class="relative min-w-max max-w-min transition-all duration-300 cursor-pointer brightness-90 hover:brightness-75">
+        <a href="#">
+          <img class="rounded-xl w-56"
+            src="https://ui-assets-gc.thrillophilia.com/assets/homepage/collections/best-of-south-east-asia/Bali-018e38260057e1baa12520852d2edf4a2e74821879109269cb9b653fdff43e92.jpg"
+            alt="image description">
+        </a>
+        <div
+          class="rounded-xl absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-gradient-to-b from-transparent via-transparent to-black opacity-70">
+        </div>
+        <figcaption class="absolute px-4 text-lg text-white bottom-6 w-full">
+          <p class="text-center">BALI</p>
+        </figcaption>
+      </figure>
+      <figure
+        class="relative min-w-max max-w-min transition-all duration-300 cursor-pointer brightness-90 hover:brightness-75">
+        <a href="#">
+          <img class="rounded-xl w-56"
+            src="https://ui-assets-gc.thrillophilia.com/assets/homepage/collections/best-of-south-east-asia/Malaysia-d4a507d7d78de516b9a9f57429f7a1b26d584a25169f7e66898f4867655454c6.jpg"
+            alt="image description">
+        </a>
+        <div
+          class="rounded-xl absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-gradient-to-b from-transparent via-transparent to-black opacity-70">
+        </div>
+        <figcaption class="absolute px-4 text-lg text-white bottom-6 w-full">
+          <p class="text-center">MALAYSIA</p>
+        </figcaption>
+      </figure>
+      <figure
+        class="relative min-w-max max-w-min transition-all duration-300 cursor-pointer brightness-90 hover:brightness-75">
+        <a href="#">
+          <img class="rounded-xl w-56"
+            src="https://ui-assets-gc.thrillophilia.com/assets/homepage/collections/best-of-south-east-asia/Vietnam-5cad282399f479a54dd8a92b63b97241bb4e49170f496c1cb502baee308c367f.jpg"
+            alt="image description">
+        </a>
+        <div
+          class="rounded-xl absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-gradient-to-b from-transparent via-transparent to-black opacity-70">
+        </div>
+        <figcaption class="absolute px-4 text-lg text-white bottom-6 w-full">
+          <p class="text-center">VIETNAM</p>
+        </figcaption>
+      </figure>
+      <figure
+        class="relative min-w-max max-w-min transition-all duration-300 cursor-pointer brightness-90 hover:brightness-75">
+        <a href="#">
+          <img class="rounded-xl w-56"
+            src="https://ui-assets-gc.thrillophilia.com/assets/homepage/collections/best-of-south-east-asia/Cambodia-e889952f1a4c3f0845ad94903cdea7ce0059c06274be45d5700eafbb7c1d4f7a.jpg"
+            alt="image description">
+        </a>
+        <div
+          class="rounded-xl absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-gradient-to-b from-transparent via-transparent to-black opacity-70">
+        </div>
+        <figcaption class="absolute px-4 text-lg text-white bottom-6 w-full">
+          <p class="text-center">CAMBODIA</p>
+        </figcaption>
+      </figure>
+      <figure
+        class="relative min-w-max max-w-min transition-all duration-300 cursor-pointer brightness-90 hover:brightness-75">
+        <a href="#">
+          <img class="rounded-xl w-56"
+            src="https://ui-assets-gc.thrillophilia.com/assets/homepage/collections/best-of-india/Rajasthan-ddc9d190b6a6ecccfa7acc66331ef9dd34bf7a8f76657a824ea13589fca7110d.jpg"
+            alt="image description">
+        </a>
+        <div
+          class="rounded-xl absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-gradient-to-b from-transparent via-transparent to-black opacity-70">
+        </div>
+        <figcaption class="absolute px-4 text-lg text-white bottom-6 w-full">
+          <p class="text-center">RAJASTHAN</p>
+        </figcaption>
+      </figure>
+      <figure
+        class="relative min-w-max max-w-min transition-all duration-300 cursor-pointer brightness-90 hover:brightness-75">
+        <a href="#">
+          <img class="rounded-xl w-56"
+            src="https://ui-assets-gc.thrillophilia.com/assets/homepage/collections/best-of-india/Kashmir-c70c0b9ed21f5c1c044cc53b1118217e24688b5b1327ab8ad499b3de1036eb07.jpg"
+            alt="image description">
+        </a>
+        <div
+          class="rounded-xl absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-gradient-to-b from-transparent via-transparent to-black opacity-70">
+        </div>
+        <figcaption class="absolute px-4 text-lg text-white bottom-6 w-full">
+          <p class="text-center">KASHMIR</p>
+        </figcaption>
+      </figure>
+      <figure
+        class="relative min-w-max max-w-min transition-all duration-300 cursor-pointer brightness-90 hover:brightness-75">
+        <a href="#">
+          <img class="rounded-xl w-56"
+            src="https://ui-assets-gc.thrillophilia.com/assets/homepage/collections/best-of-india/Sikkim-c42e8db9d016b06186f10abc7b5e1be606b9a831c8e7c8f2353427d99f983c3f.jpg"
+            alt="image description">
+        </a>
+        <div
+          class="rounded-xl absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-gradient-to-b from-transparent via-transparent to-black opacity-70">
+        </div>
+        <figcaption class="absolute px-4 text-lg text-white bottom-6 w-full">
+          <p class="text-center">SIKKIM</p>
+        </figcaption>
+      </figure>
     </div>
   </section>
 
@@ -722,7 +947,7 @@
       <button
         class="border border-gray-500 px-4 py-2 text-xs rounded-full text-gray-500 hover:border-orange-700 hover:text-orange-700">Chennai</button>
     </div>
-    <div class="grid grid-cols-3 items-center">
+    <div class="grid grid-cols-3 items-center overflow-x-auto ">
       <a href="#"
         class="flex flex-row items-center rounded-lg hover:shadow-md w-fit px-4 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110">
         <img class="object-cover rounded-lg h-16 w-16 "
@@ -1423,6 +1648,7 @@
 
 
   <script src="../src/flowbite/dist/flowbite.min.js"></script>
+  <script src="./script.js"></script>
 </body>
 
 </html>
